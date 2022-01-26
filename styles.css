@@ -28,7 +28,7 @@ header {
 .navigation-area li a {
     color: white;
     text-decoration: none;
-    padding: 5px 20px;
+    padding: 5px 40px;
     font-family: 'Comforter', cursive;
     font-size: 30px;
 }
@@ -42,7 +42,7 @@ header {
     position: absolute;
     width: 250px;
     height: 100px;
-    margin: 3% 4%;
+    margin: 2.4% 4%;
     text-align: center;
 }
 
@@ -52,4 +52,24 @@ header {
     color: white;
     text-transform: uppercase;
     font-size: 20px;
+}
+
+.content {
+    float: right;
+    margin-right: -8%;
+    margin-top: 18%;
+    display: flex;
+    align-items: center;
+}
+
+.content p {
+    color: white;
+    font-size: 30px;
+    margin-left: -55px;
+
+}
+
+#icon {
+    width: 80px;
+    cursor: pointer;
 }

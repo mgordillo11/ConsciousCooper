@@ -16,22 +16,44 @@
                     <img src="" alt="">
                 </div>
                 <ul class="navigation-area">
-                <li id = "home"><a href="#">Home</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Cooper Clan</a></li>
-            </ul>
-        </div>
+                    <li id = "home"><a href="#">Home</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Projects</a></li> 
+                    <li><a href="#">Cooper Clan</a></li>
+                </ul>
+            </div>
 
-        <div class="welcome">
-            <h1>Conscious Cooper</h1>
-            <!--<h2>Let us find your Vacation Home! &#x1f3e0; &#127796;</h2>
-            <a href="#">View more picture here!</a>-->
-        </div>
+            <div class="welcome">
+                <h1>Conscious Cooper</h1>
+            </div>
+
+            <div class="content">
+                <div class="play-music">
+                    <p>Click Here to Listen</p>
+                    <img src="../ConsciousCooper/images/play.png" id="icon">
+                </div>
+            </div>
+
+            <audio id="homeSong">
+                <source src="audio/Logic - Perfect (Remix) (feat. Lil Wayne & A$AP Ferg) (Official Audio).mp3" type="audio/mp3">
+            </audio>
+
+            <script>
+                var mySong = document.getElementById("homeSong");
+                var icon = document.getElementById("icon");
+
+                icon.onclick = function() {
+                    if(mySong.paused) {
+                        mySong.play();
+                        icon.scr = "../ConsciousCooper/images/paused.png";
+                    } else {
+                        mySong.pause();
+                        icon.scr = "../ConsciousCooper/images/play.png";
+                    }
+                }
+
+            </script>
+
         </header>
-
-        <footer>
-            
-        </footer>
     </body>
 </html>
