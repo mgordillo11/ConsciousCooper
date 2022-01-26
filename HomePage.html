@@ -31,7 +31,8 @@
             <div class="content">
                 <div class="play-music">
                     <p>Click Here to Listen</p>
-                    <img src="../ConsciousCooper/images/play.png" id="icon">
+                    <img src="images/play.png" id="icon">
+
                 </div>
             </div>
 
@@ -52,19 +53,19 @@
             </audio>
 
             <script>
-                var mySong = document.getElementById("homeSong");
-                var icon = document.getElementById("icon");
+                let mySong = document.getElementById("homeSong");
+                let icon = document.getElementById("icon");
 
                 icon.onclick = function() {
                     if(mySong.paused) {
                         mySong.play();
-                        icon.scr = "../ConsciousCooper/images/paused.png";
+                        icon.src = "images/pause.png";
                     } else {
                         mySong.pause();
-                        icon.scr = "../ConsciousCooper/images/play.png";
+                        icon.src = "images/play.png";
                     }
                 }
-                
+
             </script>
 
         </header>
