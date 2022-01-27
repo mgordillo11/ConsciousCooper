@@ -59,19 +59,25 @@ header {
     font-size: 20px;
 }
 
-.content {
-    float: right;
-    margin-right: -8%;
-    margin-top: 18%;
+.content-wrapper {
     display: flex;
-    align-items: center;
+    margin-top: 20%;
 }
 
-.content p {
+.play-music {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+.play-music p {
     color: white;
     font-size: 30px;
-    margin-left: -55px;
+}
 
+.icon-wrapper {
+    margin-bottom: auto;
 }
 
 #icon {
@@ -79,27 +85,28 @@ header {
     cursor: pointer;
 }
 .media {
-    margin-top: 39%;
-    margin-left: 32%;
+    display: flex; 
+    margin-top: 15%;
+    align-items: center;
+    justify-content: center;
 }
-.icon-wrapper li {
+
+.media li {
     list-style: none;
-    margin: 10px 30px;
-    display: inline-block;
     font-size: 20px;
-    padding: 20px 30px;
-    border-radius: 90%;
+    border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     color: #fff;
 
 }
 
-.icon-wrapper li:hover {
+.media li:hover {
     background: #edffec;
 	color: #000;
     transform: translateY(-10px);
 }
+
 .projects{
     margin-top: 10%;
     display: flex;
