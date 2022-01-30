@@ -5,9 +5,23 @@
     font-family: 'Comforter', cursive;
 }
 
+@media only screen and (min-width: 961px) {
+    .play-music p {
+        font-size: 45px;
+    }
+
+    #icon {
+        width: 75px;
+        cursor: pointer;
+    }
+
+    .content-wrapper {
+        height: 25%;
+    }
+}
+
 header {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/astronaut-space-13-4k.jpg");
-    /*background: url("images/astronaut-space-13-4k.jpg");*/
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -16,9 +30,9 @@ header {
 }
 
 .navigation-area {
-    float: right;
+    display: flex;
     list-style: none;
-    margin-top: 30px;
+    margin-top: 120px;
 }
 
 .navigation-area li {
@@ -30,7 +44,7 @@ header {
     text-decoration: none;
     padding: 5px 40px;
     font-family: 'Comforter', cursive;
-    font-size: 30px;
+    font-size: 55px;
     border-radius: 90%;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
@@ -43,61 +57,65 @@ header {
     transform: translateY(-10px);
 }
 
+.welcome-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .welcome { 
     position: absolute;
-    width: 250px;
-    height: 100px;
-    margin: 2.4% 4%;
-    text-align: center;
+    display: flex;
+    margin-top: 25px;
 }
 
 .welcome h1 {
-    /*align-content: auto;*/
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 45px;
 }
 
 .content-wrapper {
     display: flex;
-    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
 }
 
 .play-music {
     display: flex;
     align-items: center;
-    justify-content: right;
-    width: 100%;
+    /*justify-content: center;*/
+    flex-direction: column;
 }
 
 .play-music p {
     color: white;
-    font-size: 30px;
+    font-size: 90px;
 }
 
 .icon-wrapper {
-    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #icon {
-    width: 80px;
+    width: 150px;
     cursor: pointer;
 }
 .media {
     display: flex; 
-    margin-top: 15%;
     align-items: center;
-    justify-content: center;
 }
 
 .media li {
     list-style: none;
-    font-size: 20px;
+    font-size: 65px;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     color: #fff;
+    padding: 0px 50px;
 
 }
 
@@ -149,4 +167,3 @@ header {
     margin: auto;
     width: 50%;
 }
-
