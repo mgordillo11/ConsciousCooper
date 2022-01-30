@@ -5,6 +5,7 @@
     font-family: 'Comforter', cursive;
 }
 
+/* Potential Home Desktop Responsize
 @media only screen and (min-width: 961px) {
     .play-music p {
         font-size: 45px;
@@ -18,6 +19,15 @@
     .content-wrapper {
         height: 25%;
     }
+}*/
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/astronaut-space-13-4k.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+   
+    position: relative;
 }
 
 header {
@@ -166,4 +176,207 @@ header {
 .videos{
     margin: auto;
     width: 50%;
+}
+
+/* Review Page */
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 25px;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-size: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.bg-dark {
+    background-color: #343a40!important;
+    justify-content: center;
+}
+
+h1 {
+
+    text-align: center;
+    font-family: 'COMFORTER';
+    margin-top: 25px;
+    color: white;
+    font-size: 55px;
+}
+
+#testimonials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.testimonial-heading {
+	letter-spacing: 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.testimonial-heading h1 {
+	font-size: 2.2rem;
+	font-weight: 500;
+	background-color: #202020;
+	color: white;
+	padding: 10px 20px;
+}
+
+.testimonial-heading span {
+	font-size: 1.3rem;
+	color: #252525;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+    color: white;
+}
+
+.testimonial-box-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.testimonial-box {
+	width: 500px;
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, .1);
+	background-color: #ffffff;
+	padding: 20px;
+	margin: 15px;
+	cursor: pointer;
+}
+
+.profile-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+.profile-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+}
+
+.name-user {
+	display: flex;
+	flex-direction: column;
+}
+
+.name-user strong {
+	color: #3d3d3d;
+	font-size: 1.1rem;
+	letter-spacing: 0.5px;
+}
+
+.name-user span {
+	color: #979797;
+	font-size: 0.8rem;
+}
+
+.reviews {
+	color: black
+}
+
+.box-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.client-review p {
+	font-size: 0.9rem;
+	color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+}
+
+.testimonial-box:hover {
+	transform: translateY(-10px);
+	/* Small animation to move the boxes up a tad when hovering*/
+	transition: all ease 0.3s;
+	/*Control animation speed*/
+}
+
+.masonry-footer {
+	font-size: 40px;
+	color: coral;
+	opacity: .25;
+	transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+}
+
+.social-links li a {
+    padding: 0px 35px;
+    color: lightgoldenrodyellow;
+}
+
+.social-links li:hover {
+    background: #edffec;
+	color: #000;
+    transform: translateY(-10px);
+}
+
+@media(max-width:1060px) {
+	.testimonial-box {
+		width: 45%;
+		padding: 10px;
+	}
+}
+
+@media(max-width:790px) {
+	.testimonial-box {
+		width: 100%;
+	}
+	.testimonial-heading h1 {
+		font-size: 1.4rem;
+	}
+
+    .social-links li a {
+        padding: 0px 25px;
+    }
+}
+
+@media(max-width:423px) {
+	.box-top {
+		flex-wrap: wrap;
+		margin-bottom: 10px;
+	}
+	.reviews {
+		margin-top: 10px;
+	}
+
+    .social-links li a {
+        padding: 0px 10px;
+    }
 }
