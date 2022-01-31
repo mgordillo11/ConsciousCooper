@@ -441,6 +441,16 @@ h1 {
 }
 
 @media(max-width:423px) {
+    .project-content{
+        flex-direction: column;
+    }
+    .videos{
+        width: auto;
+    }
+    .projects-intro p{
+        text-align: center;
+    }
+
 	.box-top {
 		flex-wrap: wrap;
 		margin-bottom: 10px;
