@@ -13,6 +13,14 @@
     height: 100vh;   
     position: relative;
 }
+.projects-body{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/astronaut-space-13-4k.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;   
+    position: relative;
+}
 
 .review-body {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/astronaut-space-13-4k.jpg");
@@ -224,6 +232,15 @@ h1 {
 .videos{
     margin: auto;
     width: 50%;
+}
+
+.masonry-footer-projects {
+	font-size: 40px;
+	color: coral;
+	opacity: .25;
+	transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 
 /* Review Page */
@@ -438,6 +455,16 @@ h1 {
 }
 
 @media(max-width:423px) {
+    .project-content{
+        flex-direction: column;
+    }
+    .videos{
+        width: auto;
+    }
+    .projects-intro p{
+        text-align: center;
+    }
+
 	.box-top {
 		flex-wrap: wrap;
 		margin-bottom: 10px;

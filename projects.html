@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset='UTF-8'/>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <!--Style Sheet-->
+      <link rel="stylesheet" href="styles.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--Robot Font Style-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <!--using-Font-Awesome-------------------->
+      <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+      <!--package needed for the stars to show up-->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <title>Projects</title>
     </head>
 
-    <body>
+    <body class="projects-body">
         <header>
-            <div class="wrapper">
-                <div class="logo">
-                    <img src="" alt="">
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Conscious Cooper </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Review Page.html">Reviews</a>
+                    </li>
+                    </ul>
                 </div>
-                <ul class="navigation-area">
-                    <li id = "home"><a href="HomePage.html">Home</a></li>
-                    <li><a href="#">Store</a></li>
-                    <li><a href="#">Projects</a></li> 
-                    <li><a href="#">Cooper Clan</a></li>
-                </ul>
-            </div>
-
-            <div class="welcome">
-                <h1>Conscious Cooper</h1>
-            </div>
-
-            <br>
-
+            </nav>
             <div class="projects">
                 <div class ="projects-intro">
                     <p>Here is a list of all my released music and links to my videos</p>
@@ -57,16 +72,19 @@
                                 </iframe>
                             </li>
                         </ul>
-                            
-        
-                        
                     </div>
-    
                 </div>
             </div>
-        </header>
-        
-
-           
+            <div class="masonry-footer-projects">
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/consciouscooper/" target="blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCikRwUwBA7TZINK3Ga64FuA" target="blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://open.spotify.com/artist/7KsekEUaldsYo76aAJapNj?si=Rcgp8rbTRJmtM4zVCNitCA" target="blank"><i class="fab fa-spotify"></i></a></li>
+                    <li><a href="https://music.apple.com/us/artist/conscious-cooper/1590241621" target="blank"><i class="fab fa-apple"></i></a></li>
+                    <li><a href="https://soundcloud.com/cooper757" target="blank"><i class="fab fa-soundcloud"></i></a></li>
+                    <li><a href="https://github.com/mgordillo11/ConsciousCooper" target="blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>            
+        </header>       
     </body>
 </html>
