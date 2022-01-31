@@ -22,6 +22,15 @@
     position: relative;
 }
 
+.about-body {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/astronaut-space-13-4k.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;   
+    position: relative;
+}
+
 header {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/astronaut-space-13-4k.jpg");
     -webkit-background-size: cover;
@@ -352,6 +361,47 @@ h1 {
 	color: #000;
     transform: translateY(-10px);
 }
+
+/*Review Page*/
+.masonry-footer-about {
+    font-size: 40px;
+	color: coral;
+	opacity: .25;
+	transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content:center;
+    margin-top: 15%;
+}
+
+.about-words {
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    background-color: #F6F6F6;
+    border: 5px solid #CDCDCD;
+}
+
+.about-words h2 {
+  text-align: center;
+  font-size: 32pt;
+}
+
+.about-words li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 12pt;
+    margin-right: 40px;
+  }
+  
+  .about-words li a:hover {
+    background-color: #cdf8da;
+  }
+
+.about img {
+    width: 100%;
+}
+
 
 @media(max-width:1060px) {
 	.testimonial-box {
