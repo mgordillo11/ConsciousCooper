@@ -231,7 +231,17 @@ h1 {
 
 .videos{
     margin: auto;
-    width: 50%;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%;
+}
+.videos iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .masonry-footer-projects {
