@@ -13,6 +13,14 @@
     height: 100vh;   
     position: relative;
 }
+.projects-body{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/astronaut-space-13-4k.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;   
+    position: relative;
+}
 
 .review-body {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/astronaut-space-13-4k.jpg");
