@@ -234,6 +234,15 @@ h1 {
     width: 50%;
 }
 
+.masonry-footer-projects {
+	font-size: 40px;
+	color: coral;
+	opacity: .25;
+	transition: opacity 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
 /* Review Page */
 #testimonials {
 	display: flex;
