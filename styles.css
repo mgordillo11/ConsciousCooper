@@ -173,12 +173,16 @@ h1 {
 
 .masonry-footer-home {
 	font-size: 40px;
-	color: coral;
-	opacity: .25;
+	color: white;
 	transition: opacity 1s ease-in-out;
     display: flex;
     justify-content: center;
     margin-top: 15%;
+    display: grid;
+}
+
+.masonry-footer-home p {
+    display: flex;
 }
 
 /* Projects CSS */
@@ -447,5 +451,10 @@ h1 {
 
     .play-music p {
         font-size: 45px;
+    }
+
+    .masonry-footer-home p {
+        font-size: 35px;
+        text-align: center;
     }
 }
