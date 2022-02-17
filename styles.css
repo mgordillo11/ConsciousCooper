@@ -185,8 +185,23 @@ h1 {
 	transition: opacity 1s ease-in-out;
     display: flex;
     justify-content: center;
-    margin-top: 15%;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image-song {
+    display: flex;
+    justify-content: left;
+}
+
+.image-pic {
+    display: flex;
+    justify-content: left;
+}
+
+#song-pic {
+    width: 30%;
 }
 
 /* Projects CSS */
@@ -370,6 +385,7 @@ h1 {
 .social-links {
     display: flex;
     list-style: none;
+    justify-content: center;
 }
 
 .social-links li {

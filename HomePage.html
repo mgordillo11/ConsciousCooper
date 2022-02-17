@@ -43,6 +43,12 @@
             </div>
         </nav>
 
+        <div class="image-song">
+            <div class="image-pic">
+            <img src="images/dog.jpg" id="song-pic">
+            </div>
+        </div>
+
             <div class="content-wrapper">
                 <div class="play-music">
                     <p>Click Here to Listen</p>
@@ -67,9 +73,17 @@
                 <source src="audio/Wanna Live (Prod. Novmber).wav" type="audio/wav">
             </audio>
 
-            <script>
+            <script text="type/javascript" src="javascript/Home-JS.js">
+            </script>
+
+            <!--<script>
                 let mySong = document.getElementById("homeSong");
                 let icon = document.getElementById("icon");
+                const image = async => {
+                    fetch('https://picsum.photos/200/300')
+                }
+
+                console.log(image)
 
                 icon.onclick = function() {
                     if(mySong.paused) {
@@ -81,6 +95,6 @@
                     }
                 }
             
-            </script>
+            </script>-->
     </body>
 </html>
