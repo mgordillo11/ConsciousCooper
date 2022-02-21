@@ -273,6 +273,15 @@ h1 {
 }
 
 /* Review Page */
+#press-button {
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#emoji {
+    font-size: 100px;
+}
+
 #testimonials {
 	display: flex;
 	justify-content: center;
@@ -526,4 +535,13 @@ h1 {
         font-size: 35px;
         text-align: center;
     }
+
+    .ins-quote {
+        font-size: 20px;
+    }
+
+    
+#song-pic {
+    width: 50%;
+}
 }

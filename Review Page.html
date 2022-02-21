@@ -49,6 +49,10 @@
         <section id="testimonials">
             <!--heading of the reviews-->
             <div class="testimonial-heading">
+                <div id="emoji-button">
+                    <button id="press-button" type="button">Press Here To See Cooper's Favorite Emojis></button>
+                </div>
+                <div id="emoji"></div>
                 <span>Comments</span>
                 <h1>Clients Says</h1>
             </div>
@@ -187,5 +191,19 @@
                 <li><a href="https://github.com/mgordillo11/ConsciousCooper" target="blank"><i class="fab fa-github"></i></a></li>
             </ul>
         </div>
+
+        <script>
+            document.getElementById("emoji-button").addEventListener("click", async function (event) {
+            const emojiResponse = async function() {
+                return await fetch('https://emojihub.herokuapp.com/api/random')
+                    }
+
+                let emoji = await emojiResponse()
+                emoji = await emoji.json()
+                emoji = emoji.htmlCode[0]
+
+                document.getElementById("emoji").innerHTML = emoji
+                })
+        </script>
    </body>
 </html>
