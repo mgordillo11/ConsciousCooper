@@ -193,6 +193,7 @@ h1 {
 .image-song {
     display: flex;
     justify-content: left;
+    flex-direction: inherit;
 }
 
 .image-pic {
@@ -202,6 +203,17 @@ h1 {
 
 #song-pic {
     width: 30%;
+}
+
+.quote-container {
+    display: flex;
+}
+
+.ins-quote {
+    display: flex;
+    color: pink;
+    font-size: 40px;
+    text-align: center;
 }
 
 /* Projects CSS */

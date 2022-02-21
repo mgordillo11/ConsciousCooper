@@ -3,24 +3,25 @@ let icon = document.getElementById("icon");
 
 icon.onclick = async function() {
 
-    const image2 = async function image() {
+    const randomPic = async function image() {
         return await fetch('https://picsum.photos/2000/1000')
     }
 
     const inspritationalQuote = async function quote() {
-        return await fetch('https://api.fisenko.net/v1/quotes/en/random')
+        return await fetch('https://api.kanye.rest')
     }
     
-    const image3 = await image2()
+    const homePic = await randomPic()
     const insQuote = await inspritationalQuote()
+    let quote = await insQuote.json();
 
 
-    const updatedImage = image3.url
+    const updatedImage = homePic.url
+    quote = quote.quote
 
     document.getElementById("song-pic").src = updatedImage
-    document.getElementById("quote-pic").innerText = "Hello"
+    document.getElementById("quote-pic").innerText = quote
 
-    console.log(image3.url)
     if(mySong.paused) {
         mySong.play();
         icon.src = "images/pause.png";
