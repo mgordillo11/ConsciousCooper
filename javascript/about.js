@@ -1,10 +1,10 @@
-document.getElementById("weatherSubmit").addEventListener("click", function (event) {
+odocument.getElementById("weatherSubmit").addEventListener("click", function (event) {
     event.preventDefault();
     const value = document.getElementById("weatherInput").value;
     if (value === "")
         return;
     console.log(value);
-    const url = "http://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=d6f98e0b57de008e9dfc77ecc5725d47";
+    const url = "https://api.openweathermap.org/data/2.5/weather?q=" + value + ",US&units=imperial" + "&APPID=d6f98e0b57de008e9dfc77ecc5725d47";
     fetch(url)
         .then(function (response) {
             return response.json();
@@ -49,7 +49,7 @@ document.getElementById("weatherSubmit").addEventListener("click", function (eve
             document.getElementById("weatherResults").innerHTML = results;
         }).catch(error => alert("Invalid City. Please enter a valid United States City"))
 
-    const url2 = "http://api.openweathermap.org/data/2.5/forecast?q=" + value + ", US&units=imperial" + "&APPID=d6f98e0b57de008e9dfc77ecc5725d47";
+    const url2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + value + ", US&units=imperial" + "&APPID=d6f98e0b57de008e9dfc77ecc5725d47";
     fetch(url2)
         .then(function (response) {
             return response.json();
